@@ -68,7 +68,7 @@ go version go1.12.8 darwin/amd64
 
 ```
 $ go build
-$ practice00
+$ ./practice00
 ```
 
 ブラウザーを起動し以下が表示されたら完了
