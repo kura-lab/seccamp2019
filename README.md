@@ -22,4 +22,6 @@
 * practice01
   * トークン置き換え攻撃体験
 * practice02
-  * CSRF攻撃体験・対策
+  * CSRF攻撃体験
+* practice02-answer
+  * CSRF攻撃対策
