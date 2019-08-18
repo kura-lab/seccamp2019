@@ -19,8 +19,10 @@
 
 * practice00
   * Golang実行環境セットアップ
-* practice01
+* practice01-1
   * トークン置き換え攻撃体験
+* practice01-2
+  * ユーザー識別子による脆弱な認証体験
 * practice02
   * CSRF攻撃体験
 * practice02-answer
