@@ -27,3 +27,7 @@
   * CSRF攻撃体験
 * practice02-answer
   * CSRF攻撃対策
+* practice03
+  * ユーザー認証（ID Tokenの検証）・リプレイ攻撃対策
+* practice03-answer
+  * ID Tokenの検証・リプレイ攻撃対策
