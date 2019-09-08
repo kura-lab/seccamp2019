@@ -73,8 +73,8 @@ $ ./practice00
 
 ブラウザーを起動し以下が表示されたら完了
 
-* http://localhost:8080/
+* http://localhost:8080/index
 
 ```
-Hello oidc!
+Hello OpenID Connect!
 ```
