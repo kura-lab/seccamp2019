@@ -15,6 +15,8 @@ CSRF攻撃を体験してみましょう。
 
 `server.go`のソースコード内の`CLIENT_ID`と`CLIENT_SECRET`に前述で発行したものを指定し、アプリケーションを起動する。
 
+* http://localhost:8080/index
+
 # 攻撃の体験
 
 攻撃者を想定したユーザーIDでログインし、Authorization Codeを取得する。  
