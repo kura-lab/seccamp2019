@@ -10,7 +10,7 @@ import (
 
 func main() {
 	mux := http.NewServeMux()
-	mux.HandleFunc("/", index)
+	mux.HandleFunc("/index", index)
 	mux.HandleFunc("/callback", callback)
 	mux.HandleFunc("/authentication", authentication)
 

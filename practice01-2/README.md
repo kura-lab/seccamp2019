@@ -11,6 +11,8 @@
 
 「コールバックURL」に`http://localhost:8080/callback`を設定する。
 
+* http://localhost:8080/index
+
 # アプリケーション起動
 
 `server.go`のソースコード内の`CLIENT_ID`に前述で発行したClient IDを指定し、アプリケーションを起動する。
