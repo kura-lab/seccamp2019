@@ -146,6 +146,12 @@ func callback(writer http.ResponseWriter, request *http.Request) {
 	query := request.URL.Query()
 	state := query["state"][0]
 	storedState, err := request.Cookie("state")
+	stateCookie := &http.Cookie{
+		Name:   "state",
+		MaxAge: -1,
+	}
+	http.SetCookie(writer, stateCookie)
+
 	if err != nil {
 		e := Error{Error: "state cookie error"}
 		renderTemplate(writer, e, "error")
@@ -392,6 +398,11 @@ func callback(writer http.ResponseWriter, request *http.Request) {
 		renderTemplate(writer, e, "error")
 		return
 	}
+	nonceCookie := &http.Cookie{
+		Name:   "nonce",
+		MaxAge: -1,
+	}
+	http.SetCookie(writer, nonceCookie)
 	fmt.Println("id token nonce: ", idTokenPayload.Nonce)
 	fmt.Println("stored nonce: ", storedNonce.Value)
 
