@@ -98,6 +98,12 @@ func callback(writer http.ResponseWriter, request *http.Request) {
 	query := request.URL.Query()
 	state := query["state"][0]
 	storedState, err := request.Cookie("state")
+	stateCookie := &http.Cookie{
+		Name:   "state",
+		MaxAge: -1,
+	}
+	http.SetCookie(writer, stateCookie)
+
 	if err != nil {
 		e := Error{Error: "cookie error"}
 		renderTemplate(writer, e, "error")
